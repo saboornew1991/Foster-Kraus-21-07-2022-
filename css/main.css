@@ -1,0 +1,1228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+html {overflow-x: hidden;scroll-behavior: smooth;}
+body {font-family: 'Open Sans', sans-serif;}
+h1{font-size: 60px;font-weight: 700;font-family: 'Raleway', sans-serif;}
+h2 {font-size: 45px;font-weight: 700;font-family: 'Raleway', sans-serif;line-height: 45px;} 
+h3 {font-size: 35px;font-weight: 700;font-family: 'Raleway', sans-serif;}
+h4{font-size: 28px;font-weight: 700;font-family: 'Raleway', sans-serif;}
+h5{font-size: 22px;font-weight: 700;font-family: 'Raleway', sans-serif;}
+h6 {font-size: 20px;font-weight: 700;margin-bottom: 0;font-family: 'Raleway', sans-serif;}
+p {font-size: 18px;font-weight: 400;margin-bottom: 0;line-height: 29px;}
+ul {padding-left: 0;list-style: none;margin-bottom: 0;}
+li {font-size: 15px;font-weight: 400;color: #000;}
+label {font-size: 16px;font-weight: 500;}
+input {outline: none;font-weight: 400;font-size: 15px;color: #000;}
+select {outline: none;font-weight: 400;font-size: 15px;color: #000;}
+a {outline: none;text-decoration: none;font-size: 15px;font-weight: 400;color: #fff;transition: 0.6s all ease-in-out;}
+a:hover, a:focus{text-decoration: none;}
+.btn-primary:hover, .btn-primary:focus {background-color: #EF5375;border-color: transparent;box-shadow: none;}
+.btn:not(:disabled):not(.disabled) {background-color: #EF5375;border-color: transparent;box-shadow: none;}
+.compensate-for-scrollbar {position: inherit !important;margin: 0 !important;padding: 0 !important;}
+.btn-primary:not(:disabled):not(.disabled):active {background-color: #EF5375;border-color: transparent;outline: none;box-shadow: none;}
+.screen-bg.modal-open {margin:  0 !important;padding: 0 !important;}
+.btn-primary:not(:disabled):not(.disabled):active:focus {box-shadow: none;}
+/*INDEX PAGE CSS BEGIN*/
+/*TOP BAR SECTION CSS BEGIN*/
+.top-bar-sec {padding: 0px 120px;background-color: #243E80;}
+.top-bar-sec .row {display: flex;align-items: center;}
+.time-slot {display: inline-block;padding: 0 17px 0 0;}
+.invoice-btn {text-align: end;}
+.time-slot i {padding-right: 5px;}
+.invoice-btn .btn-primary {font-size: 18px;font-weight: 400;color: #fff;background-color: #EF5375;border-color: transparent;padding: 10px 27px;border-radius: 0;transition: 0.6s all ease-in-out;}
+.invoice-btn .btn-primary:hover {background-color: #102968;}
+.bar-color {color: #fff;vertical-align: text-bottom;}
+.time-slot-link:hover {color: #EF5375;}
+/*TOP BAR SECTION CSS END*/
+/*HEADER SECTION CSS BEGIN*/
+.mobile-view {display: none;}
+.mobile-view-none {display: block;}
+header {padding: 4px 120px;}
+header nav{position: initial;width: 100%;}
+header nav .navbar{height: 100%;width: 100%;display: flex;align-items: center;justify-content: space-between;margin: auto;}
+header .navbar .logo a{font-size: 30px;color: #fff;text-decoration: none;font-weight: 600;}
+header nav .navbar .nav-links{line-height: 70px;height: 100%;}
+header nav .navbar .links{display: flex;}
+header nav .navbar .links li{position: relative;display: flex;align-items: center;justify-content: space-between;list-style: none;padding: 0 29px 0 14px;}
+header nav .navbar .links li a{text-decoration: none;white-space: nowrap;color: #243E80;font-size: 20px;font-weight: 600;font-family: 'Raleway', sans-serif;text-transform: capitalize;transition: 0.6s all ease-in-out;position: relative;}
+header nav .navbar .links li a:after {content: "";display: block;width: 0;height: 2px;left: 50%;transform: translateX(-50%);position: absolute;bottom: 15px;background-color: #EF5375;transition: width .3s ease-in;}
+header nav .navbar .links li a:hover:after {width: 100%;}
+header nav .navbar .links li a:hover {color: #EF5375;}
+header .links li:hover .htmlcss-arrow, header .links li:hover .js-arrow{transform: rotate(90deg);}
+header nav .navbar .links li .arrow{height: 100%;width: 22px;line-height: 70px;text-align: center;display: inline-block;color: #EF5375;transition: all 0.3s ease;}
+header nav .navbar .links li .sub-menu{position: absolute;top: 70px;left: 0;line-height: 40px;background: #fff;box-shadow: 0 1px 2px 1px rgb(0 0 0 / 20%);border-radius: 0 0 4px 4px;display: none;z-index: 2;}
+header nav .navbar .links li:hover .htmlCss-sub-menu, header nav .navbar .links li:hover .js-sub-menu{display: block;}
+header .navbar .links li .sub-menu li{padding: 0 22px;border-bottom: 1px solid #243E80;}
+header .navbar .links li .sub-menu a{position: relative;color: #243E80;font-size: 15px;font-weight: 500;}
+header .navbar .links li .sub-menu a:after {display: none;content: "";}
+header .navbar .links li .sub-menu .more-arrow{line-height: 40px;}
+header .navbar .links li .sub-menu .more-sub-menu{position: absolute;top: 0;left: 100%;border-radius: 0 4px 4px 4px;z-index: 1;display: none;}
+header .links li .sub-menu .more:hover .more-sub-menu{display: block;}
+header .navbar .search-box{position: relative;height: 40px;width: 40px;}
+header .navbar .search-box i{position: absolute;height: 100%;width: 100%;line-height: 40px;text-align: center;font-size: 22px;color: #fff;font-weight: 600;cursor: pointer;transition: all 0.3s ease;}
+header .navbar .search-box .input-box{position: absolute;right: calc(100% - 40px);top: 80px;height: 60px;width: 300px;background: #3E8DA8;border-radius: 6px;opacity: 0;pointer-events: none;transition: all 0.4s ease;}
+header .navbar.showInput .search-box .input-box{top: 65px;opacity: 1;pointer-events: auto;background: #3E8DA8;}
+header .search-box .input-box::before{content: '';position: absolute;height: 20px;width: 20px;background: #3E8DA8;right: 10px;top: -6px;transform: rotate(45deg);}
+header .search-box .input-box input{position: absolute;top: 50%;left: 50%;border-radius: 4px;transform: translate(-50%, -50%);height: 35px;width: 280px;outline: none;padding: 0 15px;font-size: 16px;border: none;}
+header .navbar .nav-links .sidebar-logo{display: none;}
+header .navbar .bx-menu{display: none;}
+@media (max-width:920px) {
+header nav .navbar{max-width: 100%;padding: 0 0px;}
+header nav .navbar .logo a{font-size: 27px;}
+header nav .navbar .links li{padding: 0 10px;white-space: nowrap;}
+header nav .navbar .links li a{font-size: 15px;color: #243E80;}
+}
+@media (max-width:800px){
+header .navbar .bx-menu{display: block;}
+header nav .navbar .nav-links{position: fixed;top: 0;left: -100%;display: block;max-width: 100%;width: 100%;background: #fff;line-height: 40px;padding: 20px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);transition: all 0.5s ease;z-index: 1000;overflow-y: scroll;}
+header .navbar .nav-links .sidebar-logo{display: flex;align-items: center;justify-content: space-between;}
+header .sidebar-logo .logo-name{font-size: 25px;color: #fff;}
+header .sidebar-logo  i, header .navbar .bx-menu{font-size: 35px;color: #EF5375;}
+header nav .navbar .links{display: block;margin-top: 80px;}
+header nav .navbar .links li .arrow{line-height: 40px;}
+header nav .navbar .links li{display: block;}
+header nav .navbar .links li .sub-menu{position: relative;top: 0;box-shadow: none;display: none;background-color: #243E80;}
+header nav .navbar .links li .sub-menu a {color: #fff;}
+header nav .navbar .links li .sub-menu li{border-bottom: none;}
+header .navbar .links li .sub-menu .more-sub-menu{display: none;position: relative;left: 0;}
+header .navbar .links li .sub-menu .more-sub-menu li{display: flex;align-items: center;justify-content: space-between;}
+header .links li:hover .htmlcss-arrow, header .links li:hover .js-arrow{transform: rotate(0deg);}
+header .navbar .links li .sub-menu .more-sub-menu{display: none;}
+header .navbar .links li .sub-menu .more span{display: flex;align-items: center;}
+header .links li .sub-menu .more:hover .more-sub-menu{display: none;}
+header nav .navbar .links li:hover .htmlCss-sub-menu, header nav .navbar .links li:hover .js-sub-menu{display: none;}
+header .navbar .nav-links.show1 .links .htmlCss-sub-menu, header .navbar .nav-links.show3 .links .js-sub-menu, header .navbar .nav-links.show2 .links .more .more-sub-menu{display: block;}
+header .navbar .nav-links.show1 .links .htmlcss-arrow, header .navbar .nav-links.show3 .links .js-arrow{transform: rotate(89deg);}
+header .navbar .nav-links.show2 .links .more-arrow{transform: rotate(90deg);}
+}
+@media (max-width:370px){
+header nav .navbar .nav-links{max-width: 100%;} 
+}
+/*HEADER SECTION CSS END*/
+/*BANNER SECTION CSS BEGIN*/
+.banner-sec {padding: 0px 0;}
+.banner-sec .row {display: flex;align-items: center;padding: 0px 0 0px;}
+.banner-heading {font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;text-transform: uppercase;}
+.banner-main-heading {font-weight: 800;color: #243E80;text-transform: uppercase;line-height: 58px;padding: 9px 0 12px;}
+.banner-break-text {display: block;}
+.banner-text {color: #243E80;}
+.banner-content .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff;padding: 12px 30px;border-radius: 0;margin-top: 30px;}
+.banner-content .btn-primary:hover {background-color: #102968;}
+.banner-sec .carousel-caption {text-align: left;position: absolute;right: 0;bottom: 0;left: 0;z-index: 10;top: 150px;padding: 0px 120px;}
+.bg-img {height: 79vh;width: 100%;}
+.banner-sec .carousel-indicators {width: 110px;position: absolute;right: 0;bottom: 45%;left: 93%;z-index: 15;display: -ms-flexbox;display: flex;-ms-flex-pack: center;justify-content: end;padding-left: 0;margin-right: 0;margin-left: 0;transform: rotate(-90deg);}
+.banner-sec .carousel-indicators li {background-color: #fff;border-top: 0;border-bottom: 0;width: 13px;height: 13px;margin-right: 3px;margin-left: 6px;border-radius: 50%;}
+.banner-sec .carousel-indicators li.active {border:2px solid #243E80;margin-right: 3px;margin-left: 3px;}
+.banner-sec .carousel-indicators li.active span {background-color: #243E80;width: 9px;height: 9px;border-radius: 50%;display: flex;align-items: center;justify-content: center;margin-top: 2px;margin-left: 2px;}
+/*BANNER SECTION CSS END*/
+/*HEALTH SECTION CSS BEGIN*/
+.health-sec {padding: 0 120px;}
+.health-content {display: flex;align-items: center;box-shadow: 0 0 6px 2px #00000026;padding: 38px 28px;background-color: #F2F2F2;}
+.health-box-content {margin-left: 25px;}
+.health-box-heading {font-weight: 600;color: #111111;font-family: 'Open Sans', sans-serif;}
+.health-box-text {color: #111111;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+.health-red {background-color: #EF5375;}
+.health-blue {background-color: #243E80;}
+.health-red .health-box-heading {color: #fff;}
+.health-red .health-box-text {color: #fff;word-break: break-all;}
+.health-blue .health-box-heading {color: #fff;}
+.health-blue .health-box-text {color: #fff;}
+.health-sec .col-lg-4 {padding: 0;}
+.health-sec .row {margin-top: -53px;}
+/*HEALTH SECTION CSS END*/
+/*PROMISE CUSTOMER SECTION CSS BEGIN*/
+.promise-customer-sec {padding: 100px 109px 140px;}
+.customer-img {position: relative;}
+.customer-img-content {background-color: #243E80;padding: 16px 0;width: 40%;text-align: center;position: absolute;top: 0;left: 0;}
+.customer-img-content h4 {font-weight: 600;color: #fff;font-family: 'Open Sans', sans-serif;}
+.customer-img-content span {display: block;font-size: 18px;font-weight: 400;}
+.customer-img img {width: 100%;padding: 0 70px 0;}
+.call-box {background-color: #fff;padding: 23px 0px;width: 41%;text-align: center;position: absolute;bottom: -39px;right: 36px;box-shadow: 0 0 8px 2px #00000026;}
+.phone-flex {display: flex;align-items: center;justify-content: center;}
+.phone-flex i {color: #EF5375;font-size: 40px;}
+.phone-flex h4 {color: #243E80;font-weight: 600;font-family: 'Open Sans', sans-serif;margin-left: 15px;text-align: left;}
+.phone-flex span {display: block;font-size: 18px;font-weight: 400;color: #243E80;}
+.promise-content h6 {font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;text-transform: uppercase;position: relative;padding-left: 55px;letter-spacing: 3px;}
+.promise-content h6:before {position: absolute;content: "";top: 12px;left: 0;background-color: #EF5375;width: 37px;height: 1px;}
+.promise-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;line-height: 46px;padding: 10px 0 0px;}
+.promise-content span {display: block;}
+.promise-content p {color: #111111;font-style: italic;padding: 20px 0 0;width: 73%;}
+.promise-content .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #243E80 !important;padding: 12px 40px;border-radius: 0;margin-top: 20px;}
+.promise-content .btn-primary:hover {background-color: #102968 !important;}
+.pride-text {font-style: normal !important;}
+.promise-customer-sec .row {display: flex;align-items: center;}
+.promise-content small {color: #EF5375;font-weight: 800;font-size: 45px;font-family: 'Raleway', sans-serif;}
+/*PROMISE CUSTOMER SECTION CSS END*/
+/*TESTIMONIAL SECTION CSS BEGIN*/
+.testimonial-sec {padding: 80px 120px 210px;background-image: url("../images/pink-bg.png");background-repeat: no-repeat;background-size: cover;background-position: center;}
+.testimonial-content {text-align: center;}
+.testimonial-content h6 {font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;text-transform: uppercase;margin-bottom: 10px;letter-spacing: 3px;}
+.testimonial-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;}
+.testimonial-content span {color: #EF5375;}
+.main-testimonial-slider {background-color: #fff;padding: 0px 80px;margin: 50px 240px 0;text-align: center;}
+.slider-inner-content img {margin: 0 auto 0 auto;}
+.slider-inner-content p {width: 70%;margin: 30px auto 30px auto;font-style: italic;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.rating-content {border-top: 2px solid #243E80;width: 20%;margin: 39px auto 0 auto;padding: 27px 0 0;}
+.rating-content h5 {font-weight: 600;color: #243E80;font-family: 'Open Sans', sans-serif;}
+.rating-stars i {color: #FF9900;}
+.a-right1 {cursor: pointer;position: relative;top: 123px;left: 54px;}
+.a-left1 {cursor: pointer;position: relative;top: 510px;left: -43px;}
+/*TESTIMONIAL SECTION CSS END*/
+/*QUALITY SERVICES SECTION CSS BEGIN*/
+.quality-service-sec {padding: 80px 20px 0px;}
+.quality-service-sec .row {display: flex;align-items: center;}
+.quality-service-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;line-height: 48px;margin-bottom: 25px;}
+.quality-service-content span {display: block;color: #EF5375;}
+.quality-service-content p {color: #111111;width: 68%;padding: 7px 0 0;}
+.quality-service-content .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #243E80 !important;padding: 12px 70px;border-radius: 0;text-align: center;margin: 40px 0 0;}
+.quality-service-content .btn-primary:hover {background-color: #102968 !important;}
+.man-sec-img {width: 60%;margin: 0 auto 0 auto;display: block;}
+.quality-service-content h6 {font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;text-transform: uppercase;position: relative;padding-left: 55px;margin-bottom: 10px;letter-spacing: 3px;}
+.quality-service-content h6:before {position: absolute;content: "";top: 12px;left: 0;background-color: #EF5375;width: 37px;height: 1px;}
+.quality-service-content small {color: #EF5375;font-weight: 800;text-transform: uppercase;font-size: 45px;}
+/*QUALITY SERVICES SECTION CSS END*/
+/*SAFETY SECTION CSS BEGIN*/
+.safety-sec {position: relative;text-align: center;padding: 90px 120px;background-image: url("../images/safety-banner.png");background-repeat: no-repeat;background-size: cover;background-position: center;}
+.safety-banner-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #243E80;opacity: 90%;z-index: 0;}
+.safety-sec-content h2 {font-weight: 800;color: #fff;text-transform: uppercase;line-height: 48px;}
+.safety-sec-content p {color: #fff;width: 72%;margin: 30px auto 0 auto;}
+.safety-sec-content span {display: block;}
+.safety-sec-content .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #243E80 !important;background-color: #fff !important;padding: 12px 70px;border-radius: 0;text-align: center;margin: 60px 0 0;}
+.safety-sec-content .btn-primary:hover {background-color: #102968 !important;color: #fff !important;}
+/*SAFETY SECTION CSS END*/
+/*CONTACT SECTION CSS BEGIN*/
+.contact-sec {padding: 100px 120px;}
+.contact-main-sec h2 {font-weight: 800;color: #243E80;text-transform: uppercase;line-height: 47px;}
+.contact-main-sec span {display: block;color: #EF5375;}
+.contact-main-sec p {color: #111111;width: 88%;padding: 13px 0 0;}
+.address-bar-icon .ellipsis-break {display: block;font-size: 24px;color: #243E80;}
+.address-bar-icon .ellipsis-height {line-height: 3px !important;display: block !important;margin-top: 9px;font-size: 24px !important;color: #243E80;}
+.address-bar-flex {display: flex;align-items: flex-start;margin-top: 40px;}
+.address-bar-icon {margin-right: 35px;}
+.address-bar-icon .dot-line {width: auto;height: auto;display: inline-block;margin-left: 20px;box-shadow: none;margin-top: 13px;}
+.address-bar-icon li {text-align: center;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;border-radius: 50%;box-shadow: 0 0 4px 2px #00000024;margin: 6px 0 0;}
+.address-bar-icon i {color: #EF5375;font-size: 25px;}
+.ellipsis-break i {color: #243E80;}
+.contact-main {margin-top: 22px;}
+.contact-info h6 {font-weight: 400;color: #111111;font-family: 'Open Sans', sans-serif;margin-bottom: 18px;}
+.contact-info p {font-size: 24px;font-weight: 600;color: #243E80;margin-bottom: 26px;}
+.contact-info span {display: block;}
+.bg-design {background-color: #5b65800a;padding: 70px 70px;}
+.bg-design h3 {font-weight: 500;color: #243E80;text-transform: uppercase;margin-bottom: 40px;}
+.bg-design span {color: #EF5375;}
+.form-box .form-control {height: auto;padding: 15px 15px;border-top: 0;border-left: 0;border-right: 0;margin-bottom: 7px;border-bottom: 1px solid #70707080;font-size: 18px;font-weight: 400;color: #000000;font-family: 'Open Sans', sans-serif;background-color: transparent;}
+.form-control:focus {box-shadow: none;}
+.form-box p {color: #000000;padding: 10px 0 0;}
+.submit-btn {border: 0;transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #243E80 !important;padding: 16px 70px;border-radius: 0;text-align: center;margin: 50px 0 0;display: block;width: 100%;text-transform: uppercase;}
+.submit-btn:hover {background-color: #102968 !important;}
+/*CONTACT SECTION CSS END*/
+/*FOOTER SECTION CSS BEGIN*/
+footer {background-color: #243E80;padding: 40px 120px 60px;}
+.footer-logo-content p {font-weight: 300;color: #fff;width: 43%;margin: 0 auto 0 auto;}
+.footer-logo-content {text-align: center;}
+.time-sec {margin-top: 70px;}
+.footer-content-box {text-align: center;}
+.footer-content-box small {display: flex;align-items: center;justify-content: center;width: 60px;height: 60px;border-radius: 50%;background-color: #fff;margin: 0 auto 0 auto;}
+.footer-content-box i {color: #EF5375;font-size: 25px;}
+.footer-content-box h6 {color: #fff;font-family: 'Open Sans', sans-serif;padding: 18px 0 15px;}
+.footer-content-box p {font-weight: 300;color: #fff;}
+.footer-content-box span {display: block;}
+/*FOOTER SECTION CSS END*/
+/*COPY RIGHT SECTION CSS BEGIN*/
+.copyright-sec {background-color: #243E80;padding: 10px 0px;position: relative;}
+.copyright-sec p {font-weight: 300;color: #fff;text-align: center;}
+.copyright-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #000;opacity: 16%;z-index: 0;}
+/*COPY RIGHT SECTION CSS END*/
+/*INDEX PAGE CSS END*/
+/*ABOUT PAGE CSS BEGIN*/
+.about-banner-sec {padding: 120px 0;background-image: url("../images/about-banner-bg.png");background-repeat: no-repeat;background-size: cover;background-position: center;text-align: center;}
+.about-content-heading {font-size: 60px;color: #243E80;margin-bottom: 20px;}
+.about-listing {display: inline-block;padding: 0 4px 0 0;}
+.about-bar {vertical-align: text-bottom;}
+.about-link {font-weight: 600;color: #707070;font-family: 'Raleway', sans-serif;transition: 0.6s all ease-in-out;}
+.about-link:hover {color: #EF5375;}
+.about-img-content {top: 290px;}
+.emergency-sec {padding: 60px 120px 70px;background-color: #FEF3F5;margin-top: 190px;}
+.emergency-box-blue {background-color: #243E80 !important;}
+.emergency-box-content {background-color: #EF5375;padding: 50px 50px;text-align: center;min-height: 414px;}
+.emergency-box-content h5 {color: #fff;font-family: 'Open Sans', sans-serif;padding: 28px 0 10px;}
+.emergency-box-content span {display: block;font-weight: 700;margin-bottom: 10px;}
+.emergency-box-content p {font-family: 'Open Sans', sans-serif;color: #fff;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+.download-content-row {margin-top: -267px;}
+.download-content h2 {color: #111111;text-transform: uppercase;margin-bottom: 33px;}
+.download-content span {display: block;font-size: 30px;font-weight: 400;color: #707070;}
+.download-content .btn-primary {font-size: 20px;font-weight: 600;transition: 0.6s all ease-in-out;color: #fff;background-color: #EF5375 !important;padding: 7px 80px;border-radius: 0;}
+.download-content .btn-primary:hover {background-color: #102968 !important;}
+.download-content i {display: block;}
+.download-content {text-align: center;margin-top: 60px;}
+/*ABOUT PAGE CSS END*/
+/*PROMOS & EVENTS PAGE CSS BEGIN*/
+.about-content-heading span {color: #EF5375;}
+.promo-customer-img {position: relative;}
+.promo-inner-img {position: absolute;top: 90px;left: 90px;}
+.promo-customer-sec {padding: 90px 120px 90px;}
+.promo-img-content h6 {font-weight: 400;color: #EF5375;text-transform: uppercase;font-family: 'Open Sans', sans-serif;letter-spacing: 3px;}
+.promo-img-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;margin-top: 11px;}
+.promo-img-content span {display: block;color: #EF5375;}
+.promo-img-content h4 {font-weight: 600;color: #111111;font-family: 'Open Sans', sans-serif;margin-top: 23px;}
+.promo-img-content p {color: #111111;padding: 10px 0 0;}
+.promo-img-content li {color: #111111;padding: 13px 0 0;}
+.promo-img-content {padding: 0 140px 0 100px;}
+.promo-bottom-content {margin-top: 160px;}
+.promo-bottom-content h4 {font-size: 32px;font-weight: 400;color: #111111;font-family: 'Open Sans', sans-serif;}
+.promo-bottom-content span {display: block;}
+.promo-bottom-content a {display: block;padding: 9px 0 17px;font-weight: 600;color: #111111;text-decoration: underline;}
+.promo-bottom-content p {font-size: 20px;color: #111111;}
+.giveaway-sec {background-image: url("../images/giveaway-banner.png");}
+.giveaway-sec .safety-sec-content p {margin: 0px auto 0 auto;}
+.giveaway-sec .safety-sec-content h2 {margin-bottom: 40px;}
+/*PROMOS & EVENTS PAGE CSS END*/
+/*TESTIMONIALS PAGE CSS BEGIN*/
+.client-sec-testimonials {padding: 80px 120px 40px;}
+.client-test-heading {font-weight: 800;color: #243E80;text-transform: uppercase;text-align: center;margin-bottom: 60px;}
+.client-test-text {color: #EF5375;}
+.test-row {padding: 15px 0px;}
+.test-row .slider-inner-content img {margin: 0 auto 0 auto;display: block;}
+.test-row .slider-inner-content p {text-align: center;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.test-row .rating-content {text-align: center;}
+.test-row .slider-inner-content {box-shadow: 0 0 13px 2px #0000001f;padding: 50px 0 49px;}
+.test-load-more .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff;background-color: #EF5375 !important;padding: 13px 80px;border-radius: 0;}
+.test-load-more .btn-primary:hover {background-color: #102968 !important;}
+.test-load-more {text-align: center;margin-top: 60px;}
+/*TESTIMONIALS PAGE CSS END*/
+/*CAREER PAGE CSS BEGIN*/
+.amazing-career-sec {padding: 80px 120px 80px;}
+.amazing-career-content {text-align: center;}
+.amazing-career-heading {font-weight: 800;color: #243E80;text-transform: uppercase;}
+.amazing-inner-text {display: block;color: #EF5375;}
+.amazing-text {color: #373737;width: 58%;margin: 29px auto 0 auto;}
+.start-career-sec {padding: 0px 120px 40px;}
+.start-career-content {text-align: center;}
+.start-career-heading {font-weight: 800;color: #243E80;text-transform: uppercase;}
+.start-career-inner {color: #EF5375;}
+.start-career-text {color: #373737;width: 28%;margin: 29px auto 0 auto;}
+.number-link {font-size: 20px;font-weight: 700;color: #EF5375 !important;text-decoration: underline !important;}
+.career-tabs .nav-tabs {border-bottom: 0;margin-bottom: 60px;}
+.career-tabs .nav-tabs .nav-link {margin-bottom: 0;border: 0;border-top-left-radius: 0;border-top-right-radius: 0;font-size: 18px;font-weight: 500;color: #707070;background-color: #FEF3F5;padding: 13px 60px;}
+.career-tabs .nav-tabs .nav-link.active {background-color: #243E80;color: #fff;}
+.tabs-inner-career-text {box-shadow: -4px 3px 6px 2px #0000001a;border-top: 8px solid #243E80;padding: 31px 40px 8px;margin-top: 17px;}
+.tabs-inner-career-text h4 {color: #243E80;font-family: 'Open Sans', sans-serif;}
+.tabs-inner-career-text p {color: #707070;padding-top: 10px;}
+.apply-flex {display: flex;align-items: center;justify-content: space-between;margin-top: 40px;}
+.apply-listing li {font-weight: 600;color: #535353;display: inline-block;padding: 0 70px 0 0;}
+.apply-listing i {color: #EF5375;font-size: 20px;margin-right: 6px;}
+.career-apply-btn .btn-primary {transition: 0.6s all ease-in-out;font-size: 16px;font-weight: 600;color: #fff !important;background-color: #EF5375 !important;padding: 10px 30px;border-radius: 0;}
+.career-apply-btn .btn-primary:hover {background-color: #102968 !important;}
+.career-tabs {margin-top: 90px;padding-right: 80px;}
+.tab-img {margin-top: 93px;}
+/*CAREER PAGE CSS END*/
+/*HVAC RESIDENTIAL PAGE CSS BEGIN*/
+.family-safe-sec {padding: 100px 120px 80px;}
+.family-safe-sec .row {display: flex;align-items: center;}
+.family-safe-heading {font-weight: 800;color: #243E80;text-transform: uppercase;margin-bottom: 20px;}
+.family-safe-inner-text {display: block;color: #EF5375;}
+.family-safe-content {padding-left: 80px;}
+.sales-service-sec {padding: 40px 120px 80px;}
+.sales-service-sec .row {display: flex;align-items: center;}
+.sales-service-text {color: #111111;padding-top: 15px;width: 88%;}
+.sales-service-sec .family-safe-inner-text {display: inline;}
+.new-construction-sec {padding: 40px 120px 80px;}
+.new-construction-sec .row {display: flex;align-items: center;}
+.new-construction-sec .family-safe-inner-text {display: inline;}
+.new-construction-sec .family-safe-content {padding-left: 0;padding-right: 80px;}
+.sales-service-foster {padding-top: 6px;width: 88%;}
+.hvac-residential-sec {background-image: url("../images/hvac-banner.png");}
+.hvac-residential-sec .safety-sec-content p {margin: 30px auto 30px auto;}
+/*HVAC RESIDENTIAL PAGE CSS END*/
+/*HVAC COMMERCIAL PAGE CSS BEGIN*/
+.investment-sec {padding: 0px 120px 90px;}
+.investment-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;text-align: center;margin-top: 40px;}
+.investment-content span {display: block;}
+.family-safe-content li {padding: 18px 0 0;color: #111111;}
+.family-safe-content span {display: block;}
+.chiller-text {font-weight: 600;color: #111111;font-size: 15px;padding-top: 30px;}
+.chiller-text span {display: block;text-transform: uppercase;}
+.family-safe-content .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #EF5375 !important;padding: 13px 70px;border-radius: 0;margin-top: 40px;}
+.family-safe-content .btn-primary:hover {background-color: #102968 !important;}
+.commercial-blue {display: block;}
+.comm-inner-text {color: #EF5375;}
+/*HVAC COMMERCIAL PAGE CSS END*/
+/*ESA MAINTAINANCE AGREEMENT PAGE CSS BEGIN*/
+.family-safe-heading small {font-weight: 800;color: #243E80;text-transform: uppercase;color: #EF5375;font-size: 45px;}
+.esa-maintainance-sec .family-safe-heading {margin-bottom: 30px;}
+.esa-maintainance-text {color: #111111;padding-top: 25px;width: 88%;}
+.esa-reason-sec i {color: #EF5375;font-size: 9px;margin-right: 11px;margin-top: 10px;}
+.esa-reason-sec .family-safe-inner-text {display: block;}
+.esa-reason-sec li {font-size: 20px;font-weight: 600;color: #111111;width: 80%;display: flex;padding: 15px 0 0;}
+.esa-box-row {margin: 100px 260px 0;}
+.esa-box-inner-content {box-shadow: 0 0 14px 2px #00000017;padding: 50px 0 50px;text-align: center;}
+.esa-box-inner-content h3 {font-weight: 600;color: #111111;font-family: 'Open Sans', sans-serif;}
+.esa-box-inner-content .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #EF5375 !important;border-radius: 0;padding: 12px 60px;margin-top: 17px;}
+.esa-box-inner-content .btn-primary:hover {background-color: #102968 !important;}
+.esa-box-blue {box-shadow: 0 0 14px 2px #00000017;padding: 50px 0 50px;text-align: center;}
+.esa-box-blue h3 {font-weight: 600;color: #111111;font-family: 'Open Sans', sans-serif;}
+.esa-box-blue .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #243E80 !important;border-radius: 0;padding: 12px 60px;margin-top: 17px;}
+.esa-box-blue .btn-primary:hover {background-color: #102968 !important;}
+.esa-reason-sec {padding: 40px 120px 20px;}
+/*ESA MAINTAINANCE AGREEMENT PAGE CSS END*/
+/*COMFORT ADVISOR PAGE CSS BEGIN*/
+.comfort-advisor-sec h2 {color: #EF5375;}
+.house-sec p {width: 88%;}
+.comfort-listing-sec .family-safe-inner-text {display: inline;}
+.comfort-listing-sec .row {display: flex;align-items: center;}
+.comfort-listing-sec {padding-bottom: 90px;}
+.comfort-listing-sec .family-safe-content {padding-left: 0;}
+.comfort-listing-sec li {width: 70%;}
+.comfort-page-text {width: 36% !important;}
+/*COMFORT ADVISOR PAGE CSS END*/
+/*PLUMBING PAGE CSS BEGIN*/
+.comfort-type-text {color: #EF5375;}
+.plumbing-listing-sec {padding-bottom: 90px;}
+.plumbing-listing-sec .family-safe-inner-text {display: inline;}
+.plumbing-sales-text {color: #111111;width: 78%;}
+/*PLUMBING PAGE CSS END*/
+/*FINANCING PAGE CSS BEGIN*/
+.financing-banner-sec {background-image: url("../images/financing-banner.png");background-repeat: no-repeat;background-size: cover;background-position: initial;padding: 100px 120px 90px;}
+.financing-banner-content h4 {font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;text-transform: uppercase;}
+.financing-banner-content h1 {font-weight: 800;color: #243E80;text-transform: uppercase;line-height: 58px;}
+.line-br-offer {display: block;color: #EF5375;}
+.financing-banner-content h5 {font-weight: 400;color: #111111;font-family: 'Open Sans', sans-serif;padding: 8px 0;}
+.line-br-pr {display: block;}
+.financing-banner-content p {font-size: 15px;color: #111111;width: 30%;padding: 4px 0 20px;}
+.financing-banner-content ul {padding: 0 0 25px;}
+.financing-banner-content li {font-weight: 600;color: #111111;padding: 2px 0;}
+.financing-banner-content i {font-size: 9px;color: #EF5375;vertical-align: middle;margin-right: 5px;}
+.financing-banner-content .btn-primary {transition: 0.6s all ease-in-out;padding: 13px 50px;border-radius: 0;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #EF5375 !important;}
+.financing-banner-content .btn-primary:hover {background-color: #102968 !important;}
+.number-pin {font-size: 22px;font-weight: 400;color: #EF5375;}
+.best-financing-sec {padding: 80px 120px 20px;}
+.best-sec-content h4 {font-size: 20px;font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;letter-spacing: 3px;}
+.best-sec-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;padding-top: 4px;}
+.best-sec-content span {display: block;color: #EF5375;}
+.best-sec-content p {color: #111111;width: 52%;padding: 10px 0;}
+.best-form-box {box-shadow: 0 0 9px 2px #00000029;padding: 50px 50px 50px;margin-top: 45px;}
+.best-form-content {font-weight: 600;color: #707070;width: 56%;display: flex;align-items: flex-start;}
+.best-form-content input {margin-top: 8px;margin-right: 9px;}
+.best-form-heading {font-size: 26px;font-weight: 600;color: #111111;font-family: 'Open Sans', sans-serif;padding: 30px 0 7px;}
+.flex-field-box {display: flex;align-items: center;margin-top: 20px;}
+.flex-field-box .form-control {height: auto;padding: 20px 15px;border-radius: 0;outline: none;font-size: 15px;color: #707070;font-weight: 600;font-family: 'Open Sans', sans-serif;margin-right: 20px;border: 1px solid #707070;}
+.form-radio-listing li {display: inline-block;padding: 0 30px 0 0;font-weight: 600;color: #707070;}
+.form-radio-listing input {margin-right: 6px;}
+.best-form-box .btn-primary {transition: 0.6s all ease-in-out;font-size: 20px;font-weight: 600;color: #fff !important;background-color: #EF5375 !important;border-radius: 0;font-family: 'Open Sans', sans-serif;padding: 13px 70px;margin-top: 50px;}
+.best-form-box .btn-primary:hover {background-color: #102968 !important;}
+/*FINANCING PAGE CSS END*/
+/*CONTACT PAGE CSS BEGIN*/
+.get-in-touch-sec {padding: 100px 120px 80px;text-align: center;background-image: url("../images/contact-banner.png");background-repeat: no-repeat;background-size: contain;background-position: top;position: relative;}
+.contact-page-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 0;background-color: #FFFFFF;opacity: 5%;}
+.get-touch-content {margin-bottom: 55px;}
+.get-touch-content h2 {font-weight: 800;color: #243E80;text-transform: uppercase;}
+.get-touch-content p {color: #111111;width: 35%;margin: 20px auto 0 auto;}
+.touch-org {color: #EF5375;}
+.get-new-boxes {position: relative;}
+.get-new-boxes:after {content: "";position: absolute;top: 0;right: 0;width: 1px;height: 100px;background-color: #707070;}
+.touch-icon {width: 70px;height: 70px;border-radius: 50%;display: flex;align-items: center;justify-content: center;margin: 0 auto 0 auto;font-size: 24px;color: #fff;background-color: #EF5375;}
+.get-touch-boxes h6 {font-weight: 600;color: #111111;font-family: 'Open Sans', sans-serif;padding: 20px 0 11px;}
+.get-touch-boxes p {color: #111111;line-height: 26px;}
+.touch-content {display: block;}
+.help-today-sec {padding: 80px 120px 80px;}
+.emergency-service-content {font-weight: 400;color: #EF5375;font-family: 'Open Sans', sans-serif;}
+.emergency-service-content span {display: block;}
+.help-today-heading {font-weight: 800;color: #243E80;text-transform: uppercase;padding-top: 20px;}
+.help-today-heading span {display: block;color: #EF5375;}
+.today-contact-box {background-color: #5b65800a;padding: 70px 50px 70px 50px;}
+.today-contact-box h4 {font-size: 26px;font-weight: 600;color: #707070;font-family: 'Open Sans', sans-serif;}
+.contact-info-text {font-weight: 600;color: #707070;display: flex;align-items: flex-start;padding: 30px 0 25px;}
+.contact-info-text input {margin-top: 8px;margin-right: 7px;}
+.today-form-flex {display: flex;align-items: center;}
+.today-form-flex .form-control {height: auto;padding: 17px 15px;border-top: 0;border-left: 0;border-right: 0;background-color: transparent;font-size: 16px;font-weight: 600;color: #707070;font-family: 'Open Sans', sans-serif;margin-right: 31px;border-bottom: 1px solid #707070;resize: none;}
+.field-req-text {font-weight: 600;color: #111111;padding: 40px 0 0;display: flex;align-items: center;justify-content: space-between;padding-right: 30px;}
+.field-req-text .btn-primary {transition: 0.6s all ease-in-out;font-size: 18px;font-weight: 600;color: #fff !important;background-color: #EF5375 !important;font-family: 'Open Sans', sans-serif;border-radius: 0;padding: 13px 50px;}
+.field-req-text .btn-primary:hover {background-color: #102968 !important;}
+/*CONTACT PAGE CSS END*/
+/*RESPONSIVE CSS BEGIN*/
+@media only screen and (min-width: 320px) and (max-width: 529px) {
+.banner-sec .carousel-indicators {display: none;}
+.a-left1 {display: none !important;}
+.a-right1 {display: none !important;}
+header {padding: 10px 15px;}
+.top-bar-sec {padding: 0px 15px;}
+header .navbar .search-box {display: none;}
+.logo img {width: 100px;}
+.health-sec {padding: 0 15px;}
+.promise-customer-sec {padding: 50px 15px 70px;}
+.testimonial-sec {padding: 60px 15px 70px;}
+.main-testimonial-slider {padding: 20px 10px;margin: 50px 0px 0;}
+.slider-inner-content p {width: 100%;font-size: 15px;}
+.rating-content {width: 40%;margin: 39px auto 0px auto;padding: 27px 0 0;}
+.quality-service-sec {padding: 50px 15px 50px;}
+.safety-sec {padding: 50px 15px;}
+.contact-sec {padding: 50px 15px;}
+.bg-design {padding: 35px 30px;}
+footer {padding: 20px 15px 10px;}
+.footer-logo-content p {width: 100%;margin: 0 auto 0 auto;font-size: 15px;}
+.health-sec .row {margin-top: 40px;}
+.banner-sec .carousel-caption {right: 0;bottom: 0;left: 0;top: 70px;padding: 0px 15px;}
+.banner-sec .row {display: block;padding: 0px 0 0px;}
+.logo-name img {width: 100px;}
+.mobile-view {display: block;margin-left: 10px;}
+.mobile-view-none {display: none;}
+.mobile-view a {font-size: 15px;color: #243E80;font-weight: 600;font-family: 'Raleway', sans-serif;text-transform: capitalize;}
+.mobile-view .invoice-btn {text-align: left;margin-top: 15px;}
+.invoice-btn .btn-primary {font-size: 15px;}
+.bg-img {height: 93vh;width: 100%;}
+.banner-heading {font-size: 20px;}
+.banner-main-heading {font-size: 35px;line-height: 37px;}
+.banner-break-text {display: inline;}
+.banner-content .btn-primary {font-size: 15px;}
+.machine-img {margin-top: 50px;}
+.health-sec .col-lg-4 {padding: 0;margin-bottom: 15px;}
+.health-red .health-box-text {font-size: 15px;line-height: 25px;}
+.health-blue .health-box-text {font-size: 15px;line-height: 25px;}
+.health-content {box-shadow: none;}
+.customer-img img {padding: 0 0px 0;}
+.customer-img-content h4 {font-size: 20px;margin-bottom: 0;}
+.customer-img-content {padding: 7px 0;width: 45%;}
+.call-box {padding: 12px 0px;width: 64%;bottom: 0px;right: 0;}
+.phone-flex h4 {font-size: 20px;margin-bottom: 0;}
+.promise-content {margin-top: 35px;}
+.promise-content h2 {line-height: 35px;padding: 10px 0 0px;font-size: 30px;}
+.promise-content span {display: inline;}
+.promise-content small {font-size: 30px;}
+.promise-content h6 {padding-left: 44px;font-size: 17px;}
+.promise-content p {padding: 20px 0 0;width: 100%;font-size: 15px;}
+.promise-content .btn-primary {font-size: 15px;padding: 12px 40px;margin-top: 20px;}
+.health-box-text {font-size: 15px;line-height: 25px;}
+.banner-text {font-size: 15px;}
+.health-box-heading {font-size: 24px;margin-bottom: 10px;}
+.testimonial-content h2 {font-size: 30px;line-height: 35px;}
+.testimonial-content h6 {font-size: 17px;}
+.quality-service-content h6 {font-size: 17px;}
+.quality-service-content h2 {line-height: 35px;margin-bottom: 25px;font-size: 30px;}
+.quality-service-content small {font-size: 30px;}
+.quality-service-content span {display: inline;}
+.quality-service-content p {width: 100%;padding: 7px 0 0;font-size: 15px;}
+.quality-service-content {margin-top: 35px;}
+.quality-service-content .btn-primary {font-size: 15px;padding: 12px 70px;margin: 40px 0 0;}
+.safety-sec-content h2 {line-height: 35px;font-size: 30px;}
+.safety-sec-content p {width: 100%;margin: 30px auto 0 auto;font-size: 15px;}
+.safety-sec-content .btn-primary {font-size: 15px;padding: 12px 70px;margin: 60px 0 0;}
+.contact-main-sec h2 {line-height: 35px;font-size: 30px;}
+.contact-main-sec p {width: 100%;padding: 13px 0 0;font-size: 15px;}
+.contact-info h6 {margin-bottom: 18px;font-size: 18px;}
+.contact-info p {font-size: 20px;margin-bottom: 26px;}
+.bg-design h3 {margin-bottom: 40px;font-size: 25px;}
+.form-box .form-control {font-size: 15px;}
+.form-box p {padding: 10px 0 0;font-size: 15px;}
+.submit-btn {font-size: 15px;padding: 16px 10px;}
+.footer-content-box p {font-size: 15px;}
+.footer-content-box {text-align: center;margin-bottom: 40px;}
+.copyright-sec p {font-size: 15px;}
+.mob-header .nav-links .links li a:hover:after {width: 0;}
+.footer-logo-content img {width: 100px;}
+.about-content-heading {font-size: 40px;}
+.about-img-content {top: 164px;}
+.emergency-sec {padding: 60px 15px 70px;margin-top: -20px;}
+.download-content-row {margin-top: 0;}
+.emergency-box-content {margin-bottom: 20px;padding: 40px 20px;}
+.emergency-box-content p {font-size: 15px;}
+.download-content h2 {font-size: 30px;line-height: 35px;}
+.download-content span {font-size: 20px;}
+.download-content .btn-primary {font-size: 15px;}
+.promo-customer-sec {padding: 50px 15px;}
+.promo-img-content {padding: 30px 0px 0;}
+.promo-img-content h2 {margin-top: 11px;font-size: 30px;line-height: 35px;}
+.promo-img-content h6 {font-size: 17px;}
+.promo-img-content h4 {font-size: 22px;}
+.promo-img-content p {padding: 10px 0 0;font-size: 15px;}
+.promo-bottom-content {margin-top: 50px;}
+.promo-bottom-content h4 {font-size: 25px;}
+.promo-bottom-content p {font-size: 15px;} 
+.client-sec-testimonials {padding: 40px 15px 10px;}
+.client-test-heading {font-size: 30px;line-height: 35px;margin-bottom: 40px;}
+.test-load-more .btn-primary {font-size: 15px;}
+.test-row .slider-inner-content {margin-bottom: 20px;padding: 50px 30px;}
+.test-row {padding: 0px 0px;}
+.amazing-career-sec {padding: 50px 15px 50px;}
+.amazing-career-heading {font-size: 30px;line-height: 35px;}
+.amazing-text {width: 100%;font-size: 15px;}
+.start-career-sec {padding: 0px 15px 10px;}
+.start-career-heading {font-size: 30px;line-height: 35px;}
+.start-career-text {width: 100%;font-size: 15px;}
+.career-tabs {margin-top: 50px;padding-right: 0;}
+.career-tabs .nav-tabs .nav-link {display: block;font-size: 17px;padding: 13px 20px;}
+.career-tabs .nav-item {width: 100%;}
+.tabs-inner-career-text {padding: 31px 30px 28px;margin-top: 17px;}
+.tabs-inner-career-text p {font-size: 15px;}
+.apply-flex {display: block;}
+.apply-listing li {padding: 0 70px 15px 0;}
+.tab-img {margin-top: 53px;}
+.number-link {display: block;}
+.family-safe-sec {padding: 50px 15px 40px;}
+.family-safe-content {padding-left: 0;padding-top: 20px;padding-bottom: 30px;}
+.sales-service-sec {padding: 10px 15px 30px;} 
+.new-construction-sec {padding: 10px 15px 20px;}
+.family-safe-heading {font-size: 30px;line-height: 35px;}
+.sales-service-text {width: 100%;font-size: 15px;}
+.new-construction-sec .family-safe-content {padding-right: 0;margin-bottom: 30px;}
+.sales-service-sec .row {flex-direction: column-reverse;}
+.sales-service-foster {width: 100%;font-size: 15px;}
+.investment-sec {padding: 0px 15px 20px;}
+.investment-content h2 {font-size: 30px;line-height: 35px;}
+.chiller-text {padding-bottom: 30px;}
+.family-safe-content .btn-primary {font-size: 15px;}
+.family-safe-heading small {font-size: 30px;}
+.family-safe-content span {display: inline;}
+.esa-box-row {margin: 100px 0px 0;}
+.esa-reason-sec li {font-size: 17px;width: 100%;padding: 15px 0 0;}
+.esa-reason-sec .family-safe-inner-text {display: inline;} 
+.esa-box-blue h3 {font-size: 25px;}
+.esa-box-blue .btn-primary {font-size: 15px;}
+.esa-box-inner-content h3 {font-size: 25px;}
+.esa-box-inner-content .btn-primary {font-size: 15px;}
+.esa-box-blue {margin-bottom: 20px;}
+.esa-maintainance-text {width: 100%;font-size: 15px;}
+.family-safe-content p {font-size: 15px;}
+.house-sec p {width: 100%;}
+.esa-reason-sec {padding: 40px 15px 20px;}
+.comfort-page-text {width: 100% !important;}.house-sec p {width: 100%;}
+.esa-reason-sec {padding: 40px 15px 20px;}
+.comfort-page-text {width: 100% !important;}
+.plumbing-sales-text {width: 100%;}
+.financing-banner-sec {padding: 50px 15px 50px;}
+.financing-banner-content h4 {font-size: 20px;}
+.financing-banner-content h1 {line-height: 40px;font-size: 40px;}
+.financing-banner-content h5 {font-size: 18px;}
+.financing-banner-content p {width: 100%;}
+.financing-banner-content .btn-primary {padding: 13px 40px;font-size: 15px;}
+.best-financing-sec {padding: 50px 15px 20px;}
+.best-sec-content h4 {font-size: 17px;}
+.best-sec-content h2 {font-size: 30px;line-height: 35px;}
+.best-sec-content p {width: 100%;font-size: 15px;}
+.best-form-box {padding: 30px 15px 30px;margin-top: 45px;}
+.best-form-content {width: 100%;font-size: 15px;}
+.best-form-heading {font-size: 22px;}
+.flex-field-box {display: block;margin-top: 0;}
+.flex-field-box .form-control {margin-top: 18px;}
+.best-form-box .btn-primary {font-size: 15px;padding: 13px 60px;}
+.financing-banner-content i {margin-right: 6px;margin-top: 7px;}
+.financing-banner-content li {display: flex;align-items: flex-start;}
+.get-in-touch-sec {padding: 50px 15px 50px;}
+.get-touch-content p {width: 100%;font-size: 15px;}
+.get-new-boxes:after {display: none;}
+.help-today-sec {padding: 40px 15px 40px;}
+.get-touch-content h2 {font-size: 30px;line-height: 35px;}
+.get-new-boxes {margin-bottom: 40px;}
+.emergency-service-content {font-size: 26px;}
+.help-today-heading {font-size: 30px;line-height: 35px;}
+.today-contact-box {padding: 30px 30px 30px 30px;margin-top: 30px;}
+.today-contact-box h4 {font-size: 22px;}
+.contact-info-text {font-size: 15px;}
+.today-form-flex {display: block;align-items: center;}
+.field-req-text {display: block;font-size: 15px;padding: 20px 0 0;}
+.field-req-text .btn-primary {font-size: 15px;padding: 13px 20px;margin-top: 30px;width: 100%;}
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+.machine-img {margin-top: 110px;}
+}
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+.banner-sec .carousel-indicators {display: none;}
+.a-left1 {display: none !important;}
+.a-right1 {display: none !important;}
+header {padding: 10px 50px;}
+.top-bar-sec {padding: 0px 15px;}
+header .navbar .search-box {display: none;}
+.logo img {width: 100px;}
+.health-sec {padding: 0 50px;}
+.promise-customer-sec {padding: 50px 50px 70px;}
+.testimonial-sec {padding: 60px 50px 70px;}
+.main-testimonial-slider {padding: 20px 10px;margin: 50px 0px 0;}
+.slider-inner-content p {width: 70%;font-size: 15px;}
+.rating-content {width: 40%;margin: 39px auto 0px auto;padding: 27px 0 0;}
+.quality-service-sec {padding: 50px 50px 50px;}
+.safety-sec {padding: 50px 50px;}
+.contact-sec {padding: 50px 50px;}
+.bg-design {padding: 35px 20px;}
+footer {padding: 20px 50px 10px;}
+.footer-logo-content p {width: 70%;margin: 0 auto 0 auto;font-size: 15px;}
+.health-sec .row {margin-top: 40px;}
+.banner-sec .carousel-caption {right: 0;bottom: 0;left: 0;top: 47px;padding: 0px 50px;}
+.banner-sec .row {padding: 0px 0 0px;}
+.logo-name img {width: 100px;}
+.mobile-view {display: block;margin-left: 10px;}
+.mobile-view-none {display: none;}
+.mobile-view a {font-size: 15px;color: #243E80;font-weight: 600;font-family: 'Raleway', sans-serif;text-transform: capitalize;}
+.mobile-view .invoice-btn {text-align: left;margin-top: 15px;}
+.invoice-btn .btn-primary {font-size: 15px;}
+.bg-img {height: 100vh;width: 100%;}
+.banner-heading {font-size: 20px;}
+.banner-main-heading {font-size: 29px;line-height: 37px;}
+.banner-break-text {display: inline;}
+.banner-content .btn-primary {font-size: 15px;margin-top: 20px;}
+.machine-img {margin-top: 50px;}
+.health-sec .col-lg-4 {padding: 0 15px;margin-bottom: 0;}
+.health-red .health-box-text {font-size: 15px;line-height: 25px;}
+.health-blue .health-box-text {font-size: 15px;line-height: 25px;}
+.health-content {box-shadow: none;display: block;padding: 28px 18px;min-height: 315px;}
+.customer-img img {padding: 0 0px 0;}
+.customer-img-content h4 {font-size: 17px;margin-bottom: 0;}
+.customer-img-content {padding: 7px 0;width: 45%;}
+.call-box {padding: 12px 0px;width: 71%;bottom: 0px;right: 0;}
+.phone-flex h4 {font-size: 18px;margin-bottom: 0;}
+.promise-content {margin-top: 35px;}
+.promise-content h2 {line-height: 35px;padding: 10px 0 0px;font-size: 30px;}
+.promise-content span {display: inline;}
+.promise-content small {font-size: 30px;}
+.promise-content h6 {padding-left: 44px;font-size: 17px;}
+.promise-content p {padding: 20px 0 0;width: 100%;font-size: 15px;}
+.promise-content .btn-primary {font-size: 15px;padding: 12px 40px;margin-top: 20px;}
+.health-box-text {font-size: 15px;line-height: 25px;}
+.banner-text {font-size: 15px;}
+.health-box-heading {font-size: 20px;margin-bottom: 10px;margin-top: 13px;}
+.testimonial-content h2 {font-size: 30px;line-height: 35px;}
+.testimonial-content h6 {font-size: 17px;}
+.quality-service-content h6 {font-size: 17px;}
+.quality-service-content h2 {line-height: 35px;margin-bottom: 25px;font-size: 30px;}
+.quality-service-content small {font-size: 30px;}
+.quality-service-content span {display: inline;}
+.quality-service-content p {width: 100%;padding: 7px 0 0;font-size: 15px;}
+.quality-service-content {margin-top: 35px;}
+.quality-service-content .btn-primary {font-size: 15px;padding: 12px 70px;margin: 40px 0 0;}
+.safety-sec-content h2 {line-height: 35px;font-size: 30px;}
+.safety-sec-content p {width: 70%;margin: 30px auto 0 auto;font-size: 15px;}
+.safety-sec-content .btn-primary {font-size: 15px;padding: 12px 70px;margin: 60px 0 0;}
+.contact-main-sec h2 {line-height: 35px;font-size: 30px;}
+.contact-main-sec p {width: 100%;padding: 13px 0 0;font-size: 15px;}
+.contact-info h6 {margin-bottom: 18px;font-size: 18px;}
+.contact-info p {font-size: 20px;margin-bottom: 26px;}
+.bg-design h3 {margin-bottom: 40px;font-size: 25px;}
+.form-box .form-control {font-size: 15px;}
+.form-box p {padding: 10px 0 0;font-size: 15px;}
+.submit-btn {font-size: 12px;padding: 16px 10px;}
+.footer-content-box p {font-size: 15px;}
+.footer-content-box {text-align: center;margin-bottom: 40px;}
+.copyright-sec p {font-size: 15px;}
+.mob-header .nav-links .links li a:hover:after {width: 0;}
+.health-box-content {margin-left: 0;}
+.customer-img-content span {font-size: 15px;}
+.phone-flex span {font-size: 15px;}
+.phone-flex i {font-size: 27px;}
+.footer-logo-content img {width: 100px;}
+.about-content-heading {font-size: 40px;}
+.about-img-content {top: 124px;}
+.emergency-sec {padding: 60px 15px 70px;margin-top: -20px;}
+.download-content-row {margin-top: 0;}
+.emergency-box-content {margin-bottom: 20px;padding: 40px 20px;min-height: 445px;}
+.emergency-box-content p {font-size: 15px;}
+.download-content h2 {font-size: 30px;line-height: 35px;}
+.download-content span {font-size: 20px;}
+.about-banner-sec {padding: 50px 0;}
+.download-content .btn-primary {font-size: 15px;}
+.promo-customer-sec {padding: 50px 15px;}
+.promo-img-content {padding: 30px 0px 0;}
+.promo-img-content h2 {margin-top: 11px;font-size: 30px;line-height: 35px;}
+.promo-img-content h6 {font-size: 17px;}
+.promo-img-content h4 {font-size: 22px;}
+.promo-img-content p {padding: 10px 0 0;font-size: 15px;}
+.promo-bottom-content {margin-top: 50px;}
+.promo-bottom-content h4 {font-size: 25px;}
+.promo-bottom-content p {font-size: 15px;} 
+.client-sec-testimonials {padding: 40px 15px 10px;}
+.client-test-heading {font-size: 30px;line-height: 35px;margin-bottom: 40px;}
+.test-load-more .btn-primary {font-size: 15px;}
+.test-row .slider-inner-content {margin-bottom: 30px;padding: 50px 30px;}
+.test-row {padding: 0px 0px;}
+.amazing-career-sec {padding: 50px 15px 50px;}
+.amazing-career-heading {font-size: 30px;line-height: 35px;}
+.amazing-text {width: 100%;font-size: 15px;}
+.start-career-sec {padding: 0px 15px 10px;}
+.start-career-heading {font-size: 30px;line-height: 35px;}
+.start-career-text {width: 100%;font-size: 15px;}
+.career-tabs {margin-top: 50px;padding-right: 0;}
+.career-tabs .nav-tabs .nav-link {display: block;font-size: 17px;padding: 13px 20px;}
+.career-tabs .nav-item {width: 100%;}
+.tabs-inner-career-text {padding: 31px 30px 28px;margin-top: 17px;}
+.tabs-inner-career-text p {font-size: 15px;}
+.apply-flex {display: block;}
+.apply-listing li {padding: 0 11px 15px 0;}
+.tab-img {margin-top: 53px;}
+.number-link {display: block;}
+.family-safe-sec {padding: 50px 15px 40px;}
+.family-safe-content {padding-left: 0;padding-top: 20px;padding-bottom: 30px;}
+.sales-service-sec {padding: 10px 15px 30px;} 
+.new-construction-sec {padding: 10px 15px 20px;}
+.family-safe-heading {font-size: 30px;line-height: 35px;}
+.sales-service-text {width: 100%;font-size: 15px;}
+.new-construction-sec .family-safe-content {padding-right: 0;margin-bottom: 30px;}
+.sales-service-foster {width: 100%;font-size: 15px;}
+.investment-sec {padding: 0px 15px 20px;}
+.investment-content h2 {font-size: 30px;line-height: 35px;}
+.chiller-text {padding-bottom: 30px;}
+.family-safe-content .btn-primary {font-size: 15px;}
+.family-safe-heading small {font-size: 30px;}
+.family-safe-content span {display: inline;}
+.esa-box-row {margin: 100px 0px 0;}
+.esa-reason-sec li {font-size: 17px;width: 100%;padding: 15px 0 0;}
+.esa-reason-sec .family-safe-inner-text {display: inline;} 
+.esa-box-blue h3 {font-size: 25px;}
+.esa-box-blue .btn-primary {font-size: 15px;}
+.esa-box-inner-content h3 {font-size: 25px;}
+.esa-box-inner-content .btn-primary {font-size: 15px;}
+.esa-maintainance-text {width: 100%;font-size: 15px;}
+.family-safe-content p {font-size: 15px;}
+.house-sec p {width: 100%;}
+.esa-reason-sec {padding: 40px 15px 20px;}
+.comfort-page-text {width: 100% !important;}
+.plumbing-sales-text {width: 100%;}
+.financing-banner-sec {padding: 50px 15px 50px;}
+.financing-banner-content h4 {font-size: 20px;}
+.financing-banner-content h1 {line-height: 40px;font-size: 40px;}
+.financing-banner-content h5 {font-size: 18px;}
+.financing-banner-content p {width: 100%;}
+.financing-banner-content .btn-primary {padding: 13px 40px;font-size: 15px;}
+.best-financing-sec {padding: 50px 15px 20px;}
+.best-sec-content h4 {font-size: 17px;}
+.best-sec-content h2 {font-size: 30px;line-height: 35px;}
+.best-sec-content p {width: 100%;font-size: 15px;}
+.best-form-box {padding: 30px 15px 30px;margin-top: 45px;}
+.best-form-content {width: 100%;font-size: 15px;}
+.best-form-heading {font-size: 22px;}
+.flex-field-box {display: block;margin-top: 0;}
+.flex-field-box .form-control {margin-top: 18px;}
+.best-form-box .btn-primary {font-size: 15px;padding: 13px 60px;}
+.financing-banner-content i {margin-right: 6px;margin-top: 7px;}
+.financing-banner-content li {display: flex;align-items: flex-start;}
+.get-in-touch-sec {padding: 50px 15px 50px;}
+.get-touch-content p {width: 60%;font-size: 15px;}
+.get-new-boxes:after {display: none;}
+.help-today-sec {padding: 40px 15px 40px;}
+.get-touch-content h2 {font-size: 30px;line-height: 35px;}
+.get-new-boxes {margin-bottom: 40px;}
+.emergency-service-content {font-size: 26px;}
+.help-today-heading {font-size: 30px;line-height: 35px;}
+.today-contact-box {padding: 30px 30px 30px 30px;margin-top: 30px;}
+.today-contact-box h4 {font-size: 22px;}
+.contact-info-text {font-size: 15px;}
+.today-form-flex {display: block;align-items: center;}
+.field-req-text {display: block;font-size: 15px;padding: 20px 0 0;}
+.field-req-text .btn-primary {font-size: 15px;padding: 13px 20px;margin-top: 30px;width: 100%;}
+.get-touch-boxes p {word-break: break-all;}
+}
+@media only screen and (min-width:768px) and (max-width: 991px) {
+.banner-sec .carousel-indicators {display: none;}
+.a-left1 {display: none !important;}
+.a-right1 {display: none !important;}
+header {padding: 10px 50px;}
+.top-bar-sec {padding: 0px 15px;}
+header .navbar .search-box {display: none;}
+.logo img {width: 100px;}
+.health-sec {padding: 0 50px;}
+.promise-customer-sec {padding: 50px 50px 70px;}
+.testimonial-sec {padding: 60px 50px 70px;}
+.main-testimonial-slider {padding: 20px 10px;margin: 50px 0px 0;}
+.slider-inner-content p {width: 70%;font-size: 15px;}
+.rating-content {width: 40%;margin: 39px auto 0px auto;padding: 27px 0 0;}
+.quality-service-sec {padding: 50px 50px 50px;}
+.safety-sec {padding: 50px 50px;}
+.contact-sec {padding: 50px 50px;}
+.bg-design {padding: 35px 20px;}
+footer {padding: 20px 50px 10px;}
+.footer-logo-content p {width: 70%;margin: 0 auto 0 auto;font-size: 15px;}
+.health-sec .row {margin-top: 40px;}
+.banner-sec .carousel-caption {right: 0;bottom: 0;left: 0;top: 47px;padding: 0px 50px;}
+.banner-sec .row {padding: 0px 0 0px;}
+.logo-name img {width: 100px;}
+.mobile-view {display: block;margin-left: 10px;}
+.mobile-view-none {display: none;}
+.mobile-view a {font-size: 15px;color: #243E80;font-weight: 600;font-family: 'Raleway', sans-serif;text-transform: capitalize;}
+.mobile-view .invoice-btn {text-align: left;margin-top: 15px;}
+.invoice-btn .btn-primary {font-size: 15px;}
+.bg-img {height: 100%;width: 100%;}
+.banner-heading {font-size: 20px;}
+.banner-main-heading {font-size: 29px;line-height: 37px;}
+.banner-break-text {display: inline;}
+.banner-content .btn-primary {font-size: 15px;margin-top: 20px;}
+.machine-img {margin-top: 50px;}
+.health-sec .col-lg-4 {padding: 0 15px;margin-bottom: 0;}
+.health-red .health-box-text {font-size: 15px;line-height: 25px;}
+.health-blue .health-box-text {font-size: 15px;line-height: 25px;}
+.health-content {box-shadow: none;display: block;padding: 28px 18px;min-height: 315px;}
+.customer-img img {padding: 0 0px 0;}
+.customer-img-content h4 {font-size: 17px;margin-bottom: 0;}
+.customer-img-content {padding: 7px 0;width: 45%;}
+.call-box {padding: 12px 0px;width: 71%;bottom: 0px;right: 0;}
+.phone-flex h4 {font-size: 18px;margin-bottom: 0;}
+.promise-content {margin-top: 35px;}
+.promise-content h2 {line-height: 35px;padding: 10px 0 0px;font-size: 30px;}
+.promise-content span {display: inline;}
+.promise-content small {font-size: 30px;}
+.promise-content h6 {padding-left: 44px;font-size: 17px;}
+.promise-content p {padding: 20px 0 0;width: 100%;font-size: 15px;}
+.promise-content .btn-primary {font-size: 15px;padding: 12px 40px;margin-top: 20px;}
+.health-box-text {font-size: 15px;line-height: 25px;}
+.banner-text {font-size: 15px;}
+.health-box-heading {font-size: 20px;margin-bottom: 10px;margin-top: 13px;}
+.testimonial-content h2 {font-size: 30px;line-height: 35px;}
+.testimonial-content h6 {font-size: 17px;}
+.quality-service-content h6 {font-size: 17px;}
+.quality-service-content h2 {line-height: 35px;margin-bottom: 25px;font-size: 30px;}
+.quality-service-content small {font-size: 30px;}
+.quality-service-content span {display: inline;}
+.quality-service-content p {width: 100%;padding: 7px 0 0;font-size: 15px;}
+.quality-service-content {margin-top: 35px;}
+.quality-service-content .btn-primary {font-size: 15px;padding: 12px 70px;margin: 40px 0 0;}
+.safety-sec-content h2 {line-height: 35px;font-size: 30px;}
+.safety-sec-content p {width: 70%;margin: 30px auto 0 auto;font-size: 15px;}
+.safety-sec-content .btn-primary {font-size: 15px;padding: 12px 70px;margin: 60px 0 0;}
+.contact-main-sec h2 {line-height: 35px;font-size: 30px;}
+.contact-main-sec p {width: 100%;padding: 13px 0 0;font-size: 15px;}
+.contact-info h6 {margin-bottom: 18px;font-size: 18px;}
+.contact-info p {font-size: 20px;margin-bottom: 26px;}
+.bg-design h3 {margin-bottom: 40px;font-size: 25px;}
+.form-box .form-control {font-size: 15px;}
+.form-box p {padding: 10px 0 0;font-size: 15px;}
+.submit-btn {font-size: 12px;padding: 16px 10px;}
+.footer-content-box p {font-size: 15px;}
+.footer-content-box {text-align: center;margin-bottom: 40px;}
+.copyright-sec p {font-size: 15px;}
+.mob-header .nav-links .links li a:hover:after {width: 0;}
+.health-box-content {margin-left: 0;}
+.customer-img-content span {font-size: 15px;}
+.phone-flex span {font-size: 15px;}
+.phone-flex i {font-size: 27px;}
+.footer-logo-content img {width: 100px;}
+.about-content-heading {font-size: 40px;}
+.about-img-content {top: 124px;}
+.emergency-sec {padding: 60px 15px 70px;margin-top: -20px;}
+.download-content-row {margin-top: 0;}
+.emergency-box-content {margin-bottom: 20px;padding: 40px 20px;min-height: 445px;}
+.emergency-box-content p {font-size: 15px;}
+.download-content h2 {font-size: 30px;line-height: 35px;}
+.download-content span {font-size: 20px;}
+.about-banner-sec {padding: 50px 0;}
+.download-content .btn-primary {font-size: 15px;}
+.promo-customer-sec {padding: 50px 50px;}
+.promo-img-content {padding: 30px 0px 0;}
+.promo-img-content h2 {margin-top: 11px;font-size: 30px;line-height: 35px;}
+.promo-img-content h6 {font-size: 17px;}
+.promo-img-content h4 {font-size: 22px;}
+.promo-img-content p {padding: 10px 0 0;font-size: 15px;}
+.promo-bottom-content {margin-top: 50px;}
+.promo-bottom-content h4 {font-size: 25px;}
+.promo-bottom-content p {font-size: 15px;}
+.client-sec-testimonials {padding: 40px 50px 10px;}
+.client-test-heading {font-size: 30px;line-height: 35px;margin-bottom: 40px;}
+.test-load-more .btn-primary {font-size: 15px;}
+.test-row .slider-inner-content {margin-bottom: 30px;padding: 50px 30px;}
+.test-row {padding: 0px 0px;}
+.amazing-career-sec {padding: 50px 15px 50px;}
+.amazing-career-heading {font-size: 30px;line-height: 35px;}
+.amazing-text {width: 100%;font-size: 15px;}
+.start-career-sec {padding: 0px 15px 10px;}
+.start-career-heading {font-size: 30px;line-height: 35px;}
+.start-career-text {width: 100%;font-size: 15px;}
+.career-tabs {margin-top: 50px;padding-right: 0;}
+.career-tabs .nav-tabs .nav-link {display: block;font-size: 17px;padding: 13px 20px;}
+.career-tabs .nav-item {width: 100%;}
+.tabs-inner-career-text {padding: 31px 30px 28px;margin-top: 17px;}
+.tabs-inner-career-text p {font-size: 15px;}
+.apply-flex {display: block;}
+.apply-listing li {padding: 0 11px 15px 0;}
+.tab-img {margin-top: 53px;}
+.number-link {display: block;}
+.family-safe-sec {padding: 50px 15px 40px;}
+.family-safe-content {padding-left: 0;padding-top: 20px;padding-bottom: 30px;}
+.sales-service-sec {padding: 10px 15px 30px;} 
+.new-construction-sec {padding: 10px 15px 20px;}
+.family-safe-heading {font-size: 30px;line-height: 35px;}
+.sales-service-text {width: 100%;font-size: 15px;}
+.new-construction-sec .family-safe-content {padding-right: 0;margin-bottom: 30px;}
+.sales-service-foster {width: 100%;font-size: 15px;}
+.investment-sec {padding: 0px 15px 20px;}
+.investment-content h2 {font-size: 30px;line-height: 35px;}
+.chiller-text {padding-bottom: 30px;}
+.family-safe-content .btn-primary {font-size: 15px;}
+.family-safe-heading small {font-size: 30px;}
+.family-safe-content span {display: inline;}
+.esa-box-row {margin: 100px 0px 0;}
+.esa-reason-sec li {font-size: 17px;width: 100%;padding: 15px 0 0;}
+.esa-reason-sec .family-safe-inner-text {display: inline;} 
+.esa-box-blue h3 {font-size: 25px;}
+.esa-box-blue .btn-primary {font-size: 15px;}
+.esa-box-inner-content h3 {font-size: 25px;}
+.esa-box-inner-content .btn-primary {font-size: 15px;}
+.esa-maintainance-text {width: 100%;font-size: 15px;}
+.family-safe-content p {font-size: 15px;}
+.house-sec p {width: 100%;}
+.esa-reason-sec {padding: 40px 15px 20px;}
+.comfort-page-text {width: 100% !important;}
+.plumbing-sales-text {width: 100%;}
+.financing-banner-sec {padding: 50px 15px 50px;}
+.financing-banner-content h4 {font-size: 20px;}
+.financing-banner-content h1 {line-height: 40px;font-size: 40px;}
+.financing-banner-content h5 {font-size: 18px;}
+.financing-banner-content p {width: 100%;}
+.financing-banner-content .btn-primary {padding: 13px 40px;font-size: 15px;}
+.best-financing-sec {padding: 50px 15px 20px;}
+.best-sec-content h4 {font-size: 17px;}
+.best-sec-content h2 {font-size: 30px;line-height: 35px;}
+.best-sec-content p {width: 100%;font-size: 15px;}
+.best-form-box {padding: 30px 15px 30px;margin-top: 45px;}
+.best-form-content {width: 100%;font-size: 15px;}
+.best-form-heading {font-size: 22px;}
+.flex-field-box {display: block;margin-top: 0;}
+.flex-field-box .form-control {margin-top: 18px;}
+.best-form-box .btn-primary {font-size: 15px;padding: 13px 60px;}
+.financing-banner-content i {margin-right: 6px;margin-top: 7px;}
+.financing-banner-content li {display: flex;align-items: flex-start;}
+.get-in-touch-sec {padding: 50px 15px 50px;}
+.get-touch-content p {width: 60%;font-size: 15px;}
+.get-new-boxes:after {display: none;}
+.help-today-sec {padding: 40px 15px 40px;}
+.get-touch-content h2 {font-size: 30px;line-height: 35px;}
+.get-new-boxes {margin-bottom: 40px;}
+.emergency-service-content {font-size: 26px;}
+.help-today-heading {font-size: 30px;line-height: 35px;}
+.today-contact-box {padding: 30px 30px 30px 30px;margin-top: 30px;}
+.today-contact-box h4 {font-size: 22px;}
+.contact-info-text {font-size: 15px;}
+.today-form-flex {display: block;align-items: center;}
+.field-req-text {display: block;font-size: 15px;padding: 20px 0 0;}
+.field-req-text .btn-primary {font-size: 15px;padding: 13px 20px;margin-top: 30px;width: 100%;}
+.get-touch-boxes p {word-break: break-all;}
+}
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+.time-slot-link {font-size: 10px;}
+.time-slot {padding: 0 4px 0 0;}
+.invoice-btn .btn-primary {font-size: 14px;padding: 10px 27px;}
+header nav .navbar .links li {padding: 0 11px 0 0px;}
+header nav .navbar .links li a {font-size: 17px;}
+header .navbar .search-box {display: none;}
+.logo img {width: 120px;}
+.banner-sec .carousel-caption {top: 102px;padding: 0px 120px;}
+.health-content {padding: 28px 10px;min-height: 214px;}
+.health-box-heading {font-size: 22px;word-break: break-all;}
+.health-box-text {font-size: 15px;line-height: 24px;word-break: break-all;}
+.banner-main-heading {line-height: 47px;padding: 9px 0 12px;font-size: 45px;}
+.banner-heading {font-size: 22px;}
+.promise-content h2 {line-height: 35px;padding: 10px 0 0px;font-size: 30px;}
+.promise-content span {display: inline;font-size: 30px;}
+.promise-content small {font-size: 30px;}
+.promise-content p {padding: 20px 0 0;width: 100%;}
+.customer-img img {padding: 0 0px 0;}
+.customer-img-content span {font-size: 15px;}
+.customer-img-content h4 {margin-bottom: 0;font-size: 22px;}
+.customer-img-content {padding: 9px 0;width: 40%;}
+.call-box {padding: 15px 0px;width: 70%;bottom: -39px;right: 0;}
+.phone-flex h4 {font-size: 22px;}
+.promise-customer-sec {padding: 70px 109px 70px;}
+.testimonial-content h2 {font-size: 30px;}
+.main-testimonial-slider {padding: 0px 80px;margin: 50px 40px 0;}
+.quality-service-content h2 {line-height: 35px;font-size: 30px;}
+.quality-service-content small {font-size: 30px;}
+.quality-service-content p {width: 90%;padding: 7px 0 0;}
+.quality-service-sec {padding: 80px 20px 0px;}
+.safety-sec-content h2 {line-height: 35px;font-size: 30px;}
+.contact-main-sec h2 {line-height: 35px;font-size: 30px;}
+.bg-design h3 {font-size: 25px;}
+.bg-design {padding: 40px 30px;}
+.contact-info p {font-size: 20px;}
+.submit-btn {font-size: 15px;padding: 16px 10px;}
+.footer-logo-content p {width: 63%;margin: 0 auto 0 auto;}
+.man-sec-img {width: 100%;margin: 0 auto 0px auto;}
+.about-img-content {top: 170px;}
+.emergency-box-content {padding: 40px 30px;min-height: 444px;}
+.promo-img-content {padding: 0 0px 0 20px;}
+.rating-content {width: 40%;}
+.amazing-text {width: 88%;}
+.start-career-text {width: 95%;}
+.career-tabs .nav-item {width: 100%;}
+.career-tabs .nav-tabs .nav-link {padding: 13px 40px;}
+.apply-listing li {padding: 10px 70px 0 0;}
+.tabs-inner-career-text {padding: 31px 40px 28px;}
+.apply-flex {display: block;}
+.apply-listing {margin-bottom: 25px;}
+.family-safe-sec {padding: 50px 120px 40px;}
+.family-safe-content {padding-left: 0;padding-top: 20px;padding-bottom: 30px;}
+.sales-service-sec {padding: 10px 120px 30px;} 
+.new-construction-sec {padding: 10px 120px 20px;}
+.family-safe-heading {font-size: 30px;line-height: 35px;}
+.sales-service-text {width: 100%;font-size: 15px;}
+.new-construction-sec .family-safe-content {padding-right: 0;margin-bottom: 30px;}
+.sales-service-foster {width: 100%;font-size: 15px;}
+.family-safe-heading small {font-size: 30px;}
+.family-safe-content span {display: inline;}
+.esa-box-row {margin: 100px 0px 0;}
+.esa-reason-sec li {font-size: 17px;width: 100%;padding: 15px 0 0;}
+.esa-reason-sec .family-safe-inner-text {display: inline;} 
+.esa-box-blue h3 {font-size: 25px;}
+.esa-box-blue .btn-primary {font-size: 15px;}
+.esa-box-inner-content h3 {font-size: 25px;}
+.esa-box-inner-content .btn-primary {font-size: 15px;}
+.esa-maintainance-text {width: 100%;font-size: 15px;}
+.family-safe-content p {font-size: 15px;}
+.comfort-advisor-sec h2 {font-size: 35px;}
+.comfort-page-text {width: 66% !important;}
+.best-form-content {width: 100%;}
+.best-sec-content p {width: 100%;}
+.financing-banner-content p {width: 80%;}
+.get-in-touch-sec {padding: 50px 120px 50px;}
+.get-touch-content p {width: 60%;font-size: 15px;}
+.get-new-boxes:after {display: none;}
+.help-today-sec {padding: 40px 120px 40px;}
+.get-touch-content h2 {font-size: 30px;line-height: 35px;}
+.get-new-boxes {margin-bottom: 40px;}
+.emergency-service-content {font-size: 26px;}
+.help-today-heading {font-size: 30px;line-height: 35px;}
+.today-contact-box {padding: 30px 30px 30px 30px;margin-top: 30px;}
+.today-contact-box h4 {font-size: 22px;}
+.contact-info-text {font-size: 15px;}
+.today-form-flex {display: block;align-items: center;}
+.field-req-text {display: block;font-size: 15px;padding: 20px 0 0;}
+.field-req-text .btn-primary {font-size: 15px;padding: 13px 20px;margin-top: 30px;width: 100%;}
+.get-touch-boxes p {word-break: break-all;}
+}
+@media only screen and (min-width:1260px) and (max-width: 1365px) {
+.time-slot-link {font-size: 13px;}
+.time-slot {padding: 0 16px 0 0;}
+.invoice-btn .btn-primary {font-size: 14px;padding: 10px 27px;}
+header nav .navbar .links li {padding: 0 16px 0 0px;}
+header nav .navbar .links li a {font-size: 20px;}
+.logo img {width: 120px;}
+.banner-sec .carousel-caption {top: 132px;padding: 0px 120px;}
+.health-content {padding: 28px 10px;min-height: 214px;}
+.health-box-heading {font-size: 22px;word-break: break-all;}
+.health-box-text {font-size: 15px;line-height: 24px;word-break: break-all;}
+.banner-main-heading {line-height: 47px;padding: 9px 0 12px;font-size: 45px;}
+.banner-heading {font-size: 22px;}
+.promise-content h2 {line-height: 35px;padding: 10px 0 0px;font-size: 30px;}
+.promise-content span {display: inline;font-size: 30px;}
+.promise-content small {font-size: 30px;}
+.promise-content p {padding: 20px 0 0;width: 100%;}
+.customer-img img {padding: 0 0px 0;}
+.customer-img-content span {font-size: 15px;}
+.customer-img-content h4 {margin-bottom: 0;font-size: 22px;}
+.customer-img-content {padding: 9px 0;width: 40%;}
+.call-box {padding: 15px 0px;width: 70%;bottom: -39px;right: 0;}
+.phone-flex h4 {font-size: 22px;}
+.promise-customer-sec {padding: 70px 109px 70px;}
+.testimonial-content h2 {font-size: 30px;}
+.main-testimonial-slider {padding: 0px 80px;margin: 50px 150px 0;}
+.quality-service-content h2 {line-height: 35px;font-size: 30px;}
+.quality-service-content small {font-size: 30px;}
+.quality-service-content p {width: 90%;padding: 7px 0 0;}
+.quality-service-sec {padding: 80px 20px 0px;}
+.safety-sec-content h2 {line-height: 35px;font-size: 30px;}
+.contact-main-sec h2 {line-height: 35px;font-size: 30px;}
+.bg-design h3 {font-size: 23px;}
+.bg-design {padding: 40px 30px;}
+.contact-info p {font-size: 20px;}
+.submit-btn {font-size: 15px;padding: 16px 10px;}
+.footer-logo-content p {width: 63%;margin: 0 auto 0 auto;}
+.man-sec-img {width: 66%;margin: 0 auto 0px auto;}
+.promise-content {padding-left: 40px;}
+.about-img-content {top: 240px;left: -40px;}
+.emergency-box-content {min-height: 444px;}
+.promo-img-content {padding: 0 0px 0 100px;}
+.start-career-text {width: 68%;}
+.career-tabs .nav-item {width: 50%;}
+.career-tabs .nav-tabs .nav-link {font-size: 15px;padding: 13px 15px;text-align: center;}
+.apply-listing li {padding: 0 11px 0 0;font-size: 13px;}
+.apply-listing i {font-size: 16px;}
+.family-safe-content span {display: inline;}
+.esa-box-row {margin: 100px 150px 0;}
+.esa-reason-sec li {font-size: 17px;width: 100%;padding: 15px 0 0;}
+.esa-reason-sec .family-safe-inner-text {display: inline;} 
+.esa-box-blue .btn-primary {font-size: 15px;}
+.esa-box-inner-content .btn-primary {font-size: 15px;}
+.financing-banner-content p {width: 50%;}
+.get-touch-content p {width: 45%;}
+.field-req-text {display: block;}
+.field-req-text .btn-primary {padding: 13px 50px;margin-top: 30px;width: 100%;}
+}
+@media only screen and (min-width:1366px) and (max-width: 1439px) {
+.time-slot-link {font-size: 14px;}
+.time-slot {padding: 0 16px 0 0;}
+.invoice-btn .btn-primary {font-size: 14px;padding: 10px 27px;}
+header nav .navbar .links li {padding: 0 16px 0 0px;}
+header nav .navbar .links li a {font-size: 20px;}
+.logo img {width: 120px;}
+.banner-sec .carousel-caption {top: 132px;padding: 0px 120px;}
+.health-content {padding: 28px 10px;min-height: 214px;}
+.health-box-heading {font-size: 22px;word-break: break-all;}
+.health-box-text {font-size: 15px;line-height: 24px;word-break: break-all;}
+.banner-main-heading {line-height: 47px;padding: 9px 0 12px;font-size: 45px;}
+.banner-heading {font-size: 22px;}
+.promise-content h2 {line-height: 35px;padding: 10px 0 0px;font-size: 30px;}
+.promise-content span {display: inline;font-size: 30px;}
+.promise-content small {font-size: 30px;}
+.promise-content p {padding: 20px 0 0;width: 90%;}
+.customer-img img {padding: 0 0px 0;}
+.customer-img-content span {font-size: 15px;}
+.customer-img-content h4 {margin-bottom: 0;font-size: 22px;}
+.customer-img-content {padding: 9px 0;width: 40%;}
+.call-box {padding: 15px 0px;width: 70%;bottom: -39px;right: 0;}
+.phone-flex h4 {font-size: 22px;}
+.promise-customer-sec {padding: 70px 109px 70px;}
+.testimonial-content h2 {font-size: 30px;}
+.main-testimonial-slider {padding: 0px 80px;margin: 50px 170px 0;}
+.quality-service-content h2 {line-height: 35px;font-size: 30px;}
+.quality-service-content small {font-size: 30px;}
+.quality-service-content p {width: 90%;padding: 7px 0 0;}
+.quality-service-sec {padding: 80px 20px 0px;}
+.safety-sec-content h2 {line-height: 35px;font-size: 30px;}
+.contact-main-sec h2 {line-height: 35px;font-size: 30px;}
+.bg-design h3 {font-size: 25px;}
+.bg-design {padding: 40px 30px;}
+.contact-info p {font-size: 20px;}
+.submit-btn {font-size: 15px;padding: 16px 10px;}
+.footer-logo-content p {width: 63%;margin: 0 auto 0 auto;}
+.man-sec-img {width: 66%;margin: 0 auto 0px auto;}
+.promise-content {padding-left: 40px;}
+.about-img-content {top: 240px;left: -40px;}
+.emergency-box-content {min-height: 444px;}
+.start-career-text {width: 66%;}
+.career-tabs .nav-item {width: 50%;}
+.career-tabs .nav-tabs .nav-link {font-size: 15px;padding: 13px 15px;text-align: center;}
+.apply-listing li {padding: 0 11px 0 0;font-size: 13px;}
+.apply-listing i {font-size: 16px;}
+.family-safe-content span {display: inline;}
+.esa-box-row {margin: 100px 150px 0;}
+.esa-reason-sec li {font-size: 17px;width: 100%;padding: 15px 0 0;}
+.esa-reason-sec .family-safe-inner-text {display: inline;} 
+.esa-box-blue .btn-primary {font-size: 15px;}
+.esa-box-inner-content .btn-primary {font-size: 15px;}
+.financing-banner-content p {width: 50%;}
+.get-touch-content p {width: 45%;}
+.field-req-text {display: block;}
+.field-req-text .btn-primary {padding: 13px 50px;margin-top: 30px;width: 100%;}
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px){
+.health-box-heading {font-size: 26px;}
+.call-box {width: 52%;}
+.submit-btn {padding: 16px 20px;}
+.about-img-content {top: 162px;}
+.emergency-box-content {min-height: 444px;}
+.career-tabs .nav-item {width: 50%;}
+.career-tabs .nav-tabs .nav-link {padding: 13px 19px;text-align: center;}
+.start-career-text {width: 61%;}
+.apply-listing li {padding: 0 23px 0 0;}
+.tabs-inner-career-text {padding: 31px 40px 28px;}
+.bg-design h3 {font-size: 22px;}
+.esa-box-row {margin: 100px 150px 0;}
+.field-req-text .btn-primary {font-size: 16px;padding: 13px 20px;}
+}
+@media only screen and (min-width: 1600px) and (max-width: 1850px){
+.call-box {width: 48%;}
+.submit-btn {padding: 16px 40px;}
+.about-img-content {top: 209px;}
+.promo-bottom-content h4 {font-size: 31px;}
+.start-career-text {width: 42%;}
+.bg-design h3 {font-size: 27px;}
+}
+@media only screen and (min-width: 1680px) and (max-width: 1919px){
+.banner-sec .carousel-caption {top: 172px;}
+.bg-design h3 {font-size: 29px;}
+}
+/*RESPONSIVE CSS END*/
